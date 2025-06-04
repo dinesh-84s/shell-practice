@@ -7,4 +7,4 @@ Number2=200
 
 TIMESTAMP=$(date)
 
-echo "script executed at: (TIMESTAMP)"
+echo "script executed at: $TIMESTAMP"
