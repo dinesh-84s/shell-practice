@@ -12,7 +12,7 @@ else
 fi
 
 dnf list installed mysql
-if [ $USERID -ne 0]
+if [ $USERID -ne 0 ]
 then 
     echo "Mysql not installaed is going to be.. installed"
 
