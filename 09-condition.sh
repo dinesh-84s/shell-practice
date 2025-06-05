@@ -9,7 +9,7 @@
 
 NUMBER=$1
 
-if [ NUMBER -lt 10 ]
+if [ $NUMBER -lt 10 ]
 then
     echo "Given nuner is $NUMBER less than 10"
 
