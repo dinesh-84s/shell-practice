@@ -16,4 +16,4 @@ echo "User running in this script $USER"
 
 echo "Home directory of the user $HOME"
 
-echo PID of the last command in backround $!"
+echo "PID of the last command in backround $!"
