@@ -27,6 +27,7 @@ else
     exit 1
 
     fi
+else   
   
     echo "mysql is installed nothing to do"
 
