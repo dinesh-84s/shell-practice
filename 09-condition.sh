@@ -11,8 +11,9 @@ NUMBER=$1
 
 if [ $NUMBER -lt 10 ]
 then
-    echo "Given nuner is $NUMBER less than 10"
+    echo "Given number is $NUMBER less than 10"
 
 else
-     echo "Given nuner is $NUMBER is not less than 10"
+
+     echo "Given number is $NUMBER is not less than 10"
 fi
