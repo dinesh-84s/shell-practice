@@ -7,7 +7,7 @@ then
     echo "ERROR:: please run the script with using root access"
     exit 1 #give other than 0 upto to 127
 else 
-    echo "you are running with the root access"
+    echo "you are running with the root access" 
 fi
 
 #vaildate functions takes input as exit status what command they tried to install
@@ -29,7 +29,7 @@ then
     dnf install mysql -y
     VALIDATE $? "Mysql"
 else 
-    echo "mysql is already installed.... Nothing to do"
+    echo "mysql is already installed.... Nothing  to do"
 fi 
 
 dnf list installed python3
