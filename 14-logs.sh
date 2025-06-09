@@ -9,7 +9,7 @@ N="/e[0m"
 LOGS_FOLDER="/var/log/shellscript-logs"
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
-b  
+ 
 mkdir -p $LOGS_FOLDER
 echo "statred and execute the skript at with: $(date)" | tee -a $LOG_FILE
 
@@ -32,7 +32,7 @@ else
 fi
 }
 
-dnf list installed mysql &>>&LOG_FILE
+dnf list installed mysql &>>$LOG_FILE
 if [ $? -ne 0 ]
 then 
 
