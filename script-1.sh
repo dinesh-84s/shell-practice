@@ -2,6 +2,6 @@
 
 GREETING="Hello World DevOps"
 echo "$GREETING"
-echo "PID of SCRIPT-2 $$"
+echo "PID of SCRIPT-1 $$"
 
 ./script-2.sh
