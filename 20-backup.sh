@@ -30,4 +30,3 @@ VALIDATE(){
         exit 1
     fi
 }
-
