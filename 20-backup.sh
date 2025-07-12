@@ -48,18 +48,6 @@ then
     USAGE
 fi
 
-if [ ! -d $SOURCE_DIR ]
-then
-    echo -e "$R Source Directory $SOURCE_DIR does not exist. Please check $N"
-    exit 1
-fi
-
-if [ ! -d $DEST_DIR ]
-then
-    echo -e "$R Destination Directory $DEST_DIR does not exist. Please check $N"
-    exit 1
-fi
-
 if [ ! -d $SOURCE_DIR ]; 
 then
     echo "$R $SOURCE_DIR does not exist. Please check $N"
