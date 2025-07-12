@@ -65,3 +65,9 @@ then
     echo "$SOURCE_DIR does not exist. Please check $N"
     exit 1
 fi
+
+if [ ! -d "$DEST_DIR" ]; 
+then
+    echo "$SDEST_DIR does not exist. Please check $N"
+    exit 1
+fi
