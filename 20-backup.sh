@@ -62,12 +62,12 @@ fi
 
 if [ ! -d "$SOURCE_DIR" ]; 
 then
-    echo "$SOURCE_DIR does not exist. Please check $N"
+    echo "$R $SOURCE_DIR does not exist. Please check $N"
     exit 1
 fi
 
 if [ ! -d "$DEST_DIR" ]; 
 then
-    echo "$SDEST_DIR does not exist. Please check $N"
+    echo "$R $DEST_DIR does not exist. Please check $N"
     exit 1
 fi
