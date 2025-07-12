@@ -60,3 +60,8 @@ then
     exit 1
 fi
 
+if [ ! -d "$SOURCE_DIR" ]; 
+then
+    echo "$SOURCE_DIR does not exist. Please check $N"
+    exit 1
+fi
