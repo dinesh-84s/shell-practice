@@ -38,7 +38,6 @@ mkdir -p $LOGS_FOLDER
 
 USAGE(){
     echo "$R is USAGE:: $N is 20-backup.sh <source-dir> <destinamtion-dir> <days(optional)>"
-
 }
 
 if [ $# -lt 2 ]
@@ -48,13 +47,13 @@ fi
 
 if [ ! -d $SOURCE_DIR ]
 then
-    echo -e "$R $SOURCE_DIR does no exist.. then please check $N"
+    echo -e "$R Soyrce directory $SOURCE_DIR does no exist.. then please check $N"
     exit 1
 fi 
 
 if [ ! -d $DEST_DIR ]
 then
-    echo -e "$R $DEST_DIR does no exist.. then please check $N"
+    echo -e "$R Destination directory $DEST_DIR does no exist.. then please check $N"
     exit 1
 fi
 
