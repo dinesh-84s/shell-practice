@@ -60,13 +60,13 @@ then
     exit 1
 fi
 
-if [ ! -d "$SOURCE_DIR" ]; 
+if [ ! -d $SOURCE_DIR ]; 
 then
     echo "$R $SOURCE_DIR does not exist. Please check $N"
     exit 1
 fi
 
-if [ ! -d "$DEST_DIR" ]; 
+if [ ! -d $DEST_DIR ]; 
 then
     echo "$R $DEST_DIR does not exist. Please check $N"
     exit 1
