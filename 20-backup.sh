@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 USERID=$(id -u)
 SOURCE_DIR=$1
 DEST_DIR=$2
@@ -58,3 +59,4 @@ then
     echo -e "$R Destination Directory $DEST_DIR does not exist. Please check $N"
     exit 1
 fi
+
