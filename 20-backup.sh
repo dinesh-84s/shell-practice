@@ -56,6 +56,3 @@ then
     echo -e "$R Destination directory $DEST_DIR does no exist.. then please check $N"
     exit 1
 fi
-
-
-
