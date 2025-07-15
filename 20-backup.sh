@@ -67,6 +67,24 @@ then
     TIME_STAMP=$(date +%F-%H-%M-%S)
     ZIP_FILE="$DEST_DIR/app-logs-$TIME_STAMP.zip"
     echo $FILES | zip -@ $ZIP_FILE
+
+    if [ -f $ZIP_FILE ]
+    then
+        echo -e "Successfully cretared zip file"
+
+        while IFS= read -r filetype
+        do  
+
+            echo "Deleting file: $filetype" | tee -a $LOG_FILE
+            rm -rf $filetype
+        done <<< $FILES
+
+        echo "Log file older days $DAYS from source directory removed ...$G SUCCESS $N"
+
+    else
+        echo -e "zip file creation... $R FAILURE $N"
+        exit 1
+    fi
 else
     echo -e "No log files found older than 14days... $Y SKIPPING $N"
 fi
