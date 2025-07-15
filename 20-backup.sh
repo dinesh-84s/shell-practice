@@ -49,19 +49,19 @@ fi
 
 if [ ! -d $SOURCE_DIR ]; 
 then
-    echo "$R source directory $SOURCE_DIR does not exist. Please check $N"
+    echo -e "$R source directory $SOURCE_DIR does not exist. Please check $N"
     exit 1
 fi
 
 if [ ! -d $DEST_DIR ]; 
 then
-    echo "$R destination directory $DEST_DIR does not exist. Please check $N"
+    echo -e "$R destination directory $DEST_DIR does not exist. Please check $N"
     exit 1
 fi
 
 FILES=$(find . -name "*.log" -mtime  +$DAYS)
 
-if [ ! -z "$FILES" ]
+if [ ! -z $FILES ]
 then
     echo "Files found"
 else
