@@ -40,6 +40,7 @@ mkdir -p $LOGS_FOLDER
 
 USAGE(){
     echo -e "$R USAGE:: $N sh 20-backup.sh <source-dir> <destination-dir> <days(optional)>"
+    exit 1
 }
 
 if [ $# -lt 2 ]
@@ -61,7 +62,7 @@ fi
 
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime  +$DAYS)
 
-if [ ! -z $FILES ]
+if [ ! -z "$FILES" ]
 then
     echo "Files found"
 else
