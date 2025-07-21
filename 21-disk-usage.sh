@@ -11,10 +11,10 @@ do
     PARTITION=$(echo $line | awk '{print $7F}')
     if [ $USAGE -ge $DISK_THRESHOLD ]
     then    
-        MSG+="High Disk Usage is on $PARTITION: $USAGE \n"
+        MSG+="High Disk Usage on $PARTITION: $USAGE % <br>"
     fi
 done <<< $DISK_USAGE
 
 #echo -e "$MSG"
 
-sh mail.sh "To DevOps Team" "High Disk Usage" $IP $MSG "dineshkonda3239@gmail.com" "Alert High-disk Usage"
+sh mail.sh "To DevOps Team" "High Disk Usage" $IP $MSG "dineshkonda3239@gmail.com" "Alert High-disk
